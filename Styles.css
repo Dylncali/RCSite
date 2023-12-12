@@ -1,0 +1,11 @@
+    h1{
+        text-align: center;
+        background-color: aqua;
+        background-image: url('ProfilePic.jpg');
+        background-size: cover;    /* Cover the header area */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center;
+        width: 80%;
+        height: 300px;
+    }
+ 
