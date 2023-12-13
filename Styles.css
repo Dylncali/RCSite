@@ -1,11 +1,54 @@
-    h1{
+    
+  /* used for styling the left margin into a solid color*/  
+
+  #left-margin{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    background-color: black;
+    z-index: -1;
+  }
+    
+   .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 85%;
+   }
+   .profile-pic{
+    background-image: url('Familyphoto.jpg');
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40%; /* Width of the background image area */
+    height: 100%;
+    margin-left: 150px;
+   }
+
+   h1{
+    text-align: left;
+    font-size: 200px;
+    width: 60%; /* Width of the text area */
+    margin-left: 10px; /* Optional: Adjust for spacing between image and text */
+
+   }
+   
+    
+    #main-content{
         text-align: center;
-        background-color: aqua;
-        background-image: url('ProfilePic.jpg');
-        background-size: cover;    /* Cover the header area */
-        background-repeat: no-repeat; /* Prevent the image from repeating */
-        background-position: center;
-        width: 80%;
-        height: 300px;
+        font-size: 30px;
+        color: black;
+        margin-right: 150px;
+        background-color: gray;
     }
+
+
+
+
+
+
+
  
