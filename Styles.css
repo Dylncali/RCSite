@@ -10,7 +10,7 @@
     width: 100%;
     top: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -63,18 +63,67 @@
    }
    
     
-    #main-content{
+    .main-content{
         text-align: center;
         font-size: 30px;
         color: black;
-        margin-right: 150px;
-        background-color: gray;
+        background-color: whitesmoke;
     }
 
 
+.dropdown {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+  height: 40px;
+  
+  background-color: rgb(61, 58, 58);
+}
 
 
+.dropdown-content{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(61, 58, 58);;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid #817c7c;
+  text-align: center;
+  margin-top: 50px;
+  max-width: 75%;
+}
+.dropdown button {
+  background-color: rgb(61, 58, 58);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
+#Personal-biography{
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
 
- 
+p {
+  
+  margin: 1px;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
