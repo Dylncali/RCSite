@@ -188,9 +188,12 @@ body, #top-margin, #left-margin, .dropdown, .dropdown-content, .dropdown button 
 }
 
 #Battle-Honor{
-  display: flex;
-  background-image: url('BattlehonorBio.png');
+  display: flex, none;
   justify-content: space-evenly;
+}
+.Battle-pic{
+  background-image: url('BattlehonorBio.png');
+  background-size: 100% 100%;
 }
 
 

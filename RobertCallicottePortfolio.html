@@ -4,6 +4,7 @@
 
  <div id="top-margin">
    <a id= "linkedin-url" href="www.linkedin.com/robert-callicotte">Linkedin</a>
+   <a id= "GitHub-url" href="https://www.instagram.com/dylncali/">GitHub</a>
    <a id= "Instagram-url" href="https://www.instagram.com/dylncali/">Instagram</a>
  </div>
 
@@ -51,7 +52,20 @@
 
 
 
-      <div class = "content-control">Stock-Tracker</div>
+         <button onclick="toggleDropdown('Stock Tracker')">Stock Tracker</button>   
+         <div id = "Stock Tracker" class = "dropdown-content">
+            <div>
+               <h2>Lets review some stocks!</h2>
+               <div class="Stock-pic"></div>
+    <div class="project-description">
+      <p>Ever been curious about which stock to purchase, but never knew about historical trends? This is the basic premise of my "Stock Tracker". Just type in any ticker you want with the appropriate time frame you're looking for and boom! Instant access to historical trends. All the code for this project can be found on my GitHub link at the top of this webpage.</p>
+      <p>Well, how does this work, you might ask? This app calls the Yahoo Finance API to retrieve information about the requested ticker a user inputs and then returns back to the view two graphs. One graph displays opening prices, and another shows closing prices within a specified time frame.</p>
+      <p>The graphs in particular are based on Plotly, which, in my personal opinion, I find more effective than Matplotlib. The combination of Plotly's advanced features and the reliable data from Yahoo Finance API ensures that the information provided is both accurate and visually appealing.</p>
+      <p>Please feel free to download the project and play around with it yourself! The "Stock Tracker" not only provides valuable insights into stock market trends but also showcases my skills in integrating APIs and data visualization tools effectively.</p>
+        
+    </div>
+            </div>
+         </div>
    </div>
    <script src="Scripts.js"></script>
 </body>
