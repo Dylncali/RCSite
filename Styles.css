@@ -1,76 +1,71 @@
-    
-  /* used for styling the left margin into a solid color*/  
-  body{
-    margin: 0 auto;
-  }
+/* General Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Top Margin and Navigation Bar */
+#top-margin {
+  background-color: #333;
+  height: 10%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Navigation Links */
+#linkedin-url, #Instagram-url {
+  text-align: left;
+  font-size: large;
+  color: aliceblue;
+}
+
+/* Left Sidebar */
+#left-margin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  background-color: #333;
+  z-index: 1;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 85%;
+  color: black;
+}
+
+
+/* Heading Style */
+h1 {
+  text-align: left;
+  font-size: 150px;
+  width: 60%;
+  margin-left: 10px;
   
-  #top-margin{
-    background-color: black;
-    height: 10%;
-    width: 100%;
-    top: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+}
 
-  #linkedin-url{
-    text-align: left;
-    font-size: large;
-    color: aliceblue;
-  }
+/* Main Content Style */
+.main-content {
+  text-align: left;
+  font-size: 30px;
+  color: black;
+  background-color: whitesmoke;
+  position: relative;
+}
 
-  #Instagram-url{
-    text-align: left;
-    font-size: large;
-    color: aliceblue;
-    margin-left: 20px;
-  }
-
-  #left-margin{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 150px;
-    background-color: black;
-    z-index: -1;
-  }
-    
-   .header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60%;
-    width: 85%;
-   }
-   .profile-pic{
-    background-image: url('Familyphoto.jpg');
-    background-size: 90% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 40%; /* Width of the background image area */
-    height: 100%;
-    margin-left: 150px;
-   }
-
-   h1{
-    text-align: left;
-    font-size: 150px;
-    width: 60%; /* Width of the text area */
-    margin-left: 10px; /* Optional: Adjust for spacing between image and text */
-
-   }
-   
-    
-    .main-content{
-        text-align: center;
-        font-size: 30px;
-        color: black;
-        background-color: whitesmoke;
-    }
-
-
+/* Dropdown Menu */
 .dropdown {
   display: flex;
   justify-content: space-evenly;
@@ -78,31 +73,24 @@
   font-size: 30px;
   color: whitesmoke;
   height: 40px;
-  
   background-color: rgb(61, 58, 58);
 }
 
-
-.dropdown-content{
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
+/* Dropdown Content */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(61, 58, 58);;
+  display: none; /* Keeps content hidden initially */
+  position: absolute; 
+  background-color: rgb(61, 58, 58);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1; /* High z-index to ensure it appears above other elements */
   padding: 10px;
   border: 1px solid #817c7c;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 25%;
   max-width: 75%;
 }
+
 .dropdown button {
   background-color: rgb(61, 58, 58);
   color: white;
@@ -112,18 +100,97 @@
   cursor: pointer;
 }
 
-#Personal-biography{
+/* Personal Biography Style */
+#Personal-biography {
   font-size: 50px;
   margin: 0;
   padding: 0;
   line-height: 1;
 }
 
+/* Paragraph Style */
 p {
-  
   margin: 1px;
   padding: 0;
   line-height: 1;
   font-size: 16px;
-  font-family: Arial, sans-serif;
 }
+
+/* Additional Styling for a Professional Look */
+/* Enhances the overall aesthetics while maintaining the structure for JavaScript functionality */
+
+/* Improving Font Sizes for Readability */
+#linkedin-url, #Instagram-url, .main-content, .dropdown button, p {
+  font-size: 18px;
+}
+
+/* Adjusting Colors for a Cohesive Look */
+body, #top-margin, #left-margin, .dropdown, .dropdown-content, .dropdown button {
+  background-color: #2c3e50; /* Dark blue for a professional look */
+}
+
+#linkedin-url, #Instagram-url, .dropdown button {
+  color: #ecf0f1; /* Light grey for better contrast and readability */
+}
+
+/* Style Adjustments for Dropdowns */
+.dropdown {
+  align-items: center;
+  padding: 0 10px;
+}
+
+.dropdown button {
+  margin: 0 5px;
+  z-index: 100;
+}
+
+/* Hover Effects for Interactivity */
+#linkedin-url:hover, #Instagram-url:hover, .dropdown button:hover {
+  color: #3498db; /* Light blue for hover effect */
+  cursor: pointer;
+}
+
+/* Profile Picture Adjustments */
+.profile-pic {
+  border-radius: 50%; /* Circular profile picture */
+  border: 5px solid #ecf0f1; /* Adding a border */
+  background-image: url('Familyphoto.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 40%;
+  height: 100%;
+  margin-left: 150px;
+  animation: bounceIn 2s; /* Apply the bounce in animation with a duration of 1.2 seconds */
+}
+#top-margin, #left-margin, .header, .profile-pic, #Personal-biography, .main-content {
+  z-index: 1; /* Lower z-index to keep these elements below dropdowns */
+}
+
+/* Keyframes for Bouncing Animation */
+/* Keyframes for Bouncing In from Off-Screen */
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-100%); /* Start off-screen */
+  }
+  60% {
+    transform: translateY(30px); /* Bounce above the final position */
+  }
+  75% {
+    transform: translateY(-10px); /* Bounce back a little */
+  }
+  90% {
+    transform: translateY(5px); /* Another small bounce */
+  }
+  100% {
+    transform: translateY(0); /* Settle into final position */
+  }
+}
+
+#Battle-Honor{
+  display: flex;
+  background-image: url('BattlehonorBio.png');
+  justify-content: space-evenly;
+}
+
+
